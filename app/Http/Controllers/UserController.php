@@ -20,12 +20,18 @@ class UserController extends Controller
         //$pass = Hash::make($req->mot_passe);
         if($user && Hash::check($req->mot_passe, $user->password)){
             $req->session()->put('user', $user);
-            return redirect ('pages.product');
+            //echo $req->session()->get('user')->password;
+            return redirect ('/');
         }else{
             return 'Mot de passe ou email non valide';
         }
     }
     
+    public function deleteSession(Request $req)
+    {
+        $req->session()->forget('user');
+        echo "Data has been removed from user session";
+    }
     public function index()
     {
         //

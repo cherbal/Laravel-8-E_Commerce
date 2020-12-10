@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Middleware\CheckStatus;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,10 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::view('/login', 'pages.login');
+Route::view('/login', 'pages.login')->middleware('UserAuth');
 
 Route::post('/login', [UserController::class, 'login']);
+
+Route::get('/login/del', [UserController::class, 'deleteSession']);
 
 Route::get('/', [ProductController::class, 'index']);
