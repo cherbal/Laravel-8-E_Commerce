@@ -1,5 +1,6 @@
 .mastermt {
     margin-top: 60px;
+    
 }
 
 /*-------  Header -------*/
@@ -13,6 +14,28 @@
     margin: auto;
 }
 /*-------  /Header -------*/
+
+/*-------  Slider -------*/
+img.slider-img{
+    height: 400px !important;
+    
+}
+
+.slider-text{
+    background: rgba(82, 85, 101, 0.49);
+}
+
+
+.trending-image{
+    height: 120px;
+}
+
+
+
+
+
+
+
 
 /*-------  Footer -------*/
 .full {

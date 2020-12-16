@@ -27,3 +27,5 @@ Route::post('/login', [UserController::class, 'login']);
 Route::get('/login/del', [UserController::class, 'deleteSession']);
 
 Route::get('/', [ProductController::class, 'index']);
+
+

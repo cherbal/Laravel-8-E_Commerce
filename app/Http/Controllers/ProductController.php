@@ -15,8 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //session()->forget('user');
-        return Product::all();
+        $data = Product::all();
+        return view('pages.product', ['products' => $data]);
     }
 
     /**

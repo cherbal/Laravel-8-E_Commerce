@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>E&#45;Commerce</title>
     
-    <link rel="stylesheet" href="css/bootstrap_.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/myStyle.css">
     <script src="js/jquery_.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
